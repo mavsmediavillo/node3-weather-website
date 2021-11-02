@@ -26,7 +26,7 @@ const forecast = (latitude, longitude, callback) => {
           } else {
                callback(
                     undefined,
-                    `${body.weather[0].description} starting in the afternoon, continuing until evening. It is currently ${body.main.temp} degrees out.`
+                    `The skies will be mostly ${body.weather[0].description} starting in the afternoon, continuing until evening. It is currently ${body.main.temp} degrees out but it feels like ${body.main.feels_like}. The humidity is ${body.main.humidity}%.`
                );
           }
      });
